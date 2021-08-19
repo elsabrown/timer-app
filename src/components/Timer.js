@@ -16,10 +16,7 @@ class Timer extends React.Component {
     console.log(this.work.isWork);
     if (this.work.isWork) {
       this.interval = setInterval(() => this.tick(), 1000);
-    } else {
-      // debugger;
-      //   this.work.isWork = false;
-    }
+    } 
   }
 
   stopTimer() {
@@ -50,7 +47,8 @@ class Timer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="timer">
+          <h2>Stopwatcher</h2>
         <div>
           <p className="Timer-text">Секунды: {this.state.seconds}</p>
         </div>
@@ -58,19 +56,19 @@ class Timer extends React.Component {
           <p className="Timer-text">Минуты: {this.state.minutes}</p>
         </div>
         <div>
-          <button name="Start" className="b-start" onClick={this.startTimer}>
+          <button name="Start" className="b-start button" onClick={this.startTimer}>
             Start
           </button>
         </div>
         <br />
         <div>
-          <button name="Stop" className="b-start" onClick={this.stopTimer}>
+          <button name="Stop" className="b-stop button" onClick={this.stopTimer}>
             Stop
           </button>
         </div>
         <br />
         <div>
-          <button name="Reset" className="b-start" onClick={this.resetTimer}>
+          <button name="Reset" className="b-reset button" onClick={this.resetTimer}>
             Reset
           </button>
         </div>

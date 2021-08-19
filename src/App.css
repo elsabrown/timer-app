@@ -3,18 +3,32 @@
   text-align: center;
 }
 
+.timer {
+  background-color: rgb(193, 193, 236);
+  width: 380px;
+  height: 260px;
+  font-family: "Tahoma", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+  border-radius: 25px;
+}
+
 .Timer-text {
   color: gray;
 }
 
-.b-start {
+.button {
   border-radius: 5px;
-  border-color: rgb(98, 140, 255);
   width: 110px;
   height: 30px;
   font-family: "Tahoma", sans-serif;
   color: white;
   font-size: 16px;
+}
+
+.b-start {
+  border-color: rgb(98, 140, 255);
   background-color: rgb(98, 140, 255);
 }
 
@@ -22,5 +36,26 @@
   color: rgb(98, 140, 255);
   background-color: white;
   border-color: rgb(98, 140, 255);
+}
 
+.b-stop {
+  border-color: rgb(240, 17, 17);
+  background-color: rgb(240, 17, 17);
+}
+
+.b-stop:hover {
+  color: rgb(240, 17, 17);
+  background-color: white;
+  border-color: rgb(240, 17, 17);
+}
+
+.b-reset {
+  border-color: rgb(241, 101, 21);
+  background-color: rgb(241, 101, 21);
+}
+
+.b-reset:hover {
+  color: rgb(241, 101, 21);
+  background-color: white;
+  border-color: rgb(241, 101, 21);;
 }
